@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+exclude = '''
+/(
+    migrations
+  | venv
+  | env
+  | .venv
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+exclude = [
+    "migrations",
+    "venv",
+    ".venv"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+fixable = ["ALL"]
